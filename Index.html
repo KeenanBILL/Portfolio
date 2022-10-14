@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <title>Portfolio</title>
 </head>
 <body>
@@ -51,29 +53,81 @@
         </ul>
     </div>
 
+    <form action="/http://formspree.io/">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname." value="Keenan"><br>
+        <label for="lname">Last name:</label><br>
+        <input for="text" id="lname" value="Olivier"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
     <div id="primary-content">
         <div class="wrapper"></div>
         <article>
             <h3>Featured content</h3>
             <p>Something about you makes me feel like a dangerous man.</p>
+            <a href="#"><img src="./Images/fruits.jpeg" alt="placeholder"></a>
         </article>
     </div>
 
     <div id="secondary-content">
-        <article></article>
-        <article></article>
+        <div class="wrapper">
+        <article style="background-image: url(./Images/543fa8dce6e646d6c1fc586790799d82.jpg);">
+            <div class="overlay">
+                <h4>Next section</h4>
+                <p>Take note of what you apply to your life because it either create you or break you.</p>
+                <a href="#" class="more-link">View more</a>
+            </div>
+        </article>
+        <article style="background-image: url(./Images/543fa8dce6e646d6c1fc586790799d82.jpg) ;">
+            <div class="overlay">
+                <h4>Check out the next content</h4>
+                <p><small>Let's take this opportunity and seize the day.</small></p>
+                <a href="#" class="more-link">View more</a>
+            </div>
+        </article><div class="clear"></div>
+    </div>
     </div>
 
     <div id="cta">
+        <div class="wrapper">
+            <h3>Want to know more?</h3>
+            <p>Explore this page and find out every detail.</p>
+            <a href="#" class="button-2">Get started</a>
+        </div>
 
     </div>
 
     <footer>
-        <div id="footer-info"></div>
+        <div class="wrapper">
+        <div id="footer-info">
+            <p>Copyright 2022 Cape Walkers. All rights reserved.</p>
+            <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+        </div>
         <div id="footer-links">
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
+            <ul>
+                <li><h5>Company</h5></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Meet the real me</a></li>
+                <li><a href="#">What I do</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <ul>
+                <li><h5>Company</h5></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What I do</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <ul>
+                <li><h5>Company</h5></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What I do</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
         </div>
     </footer>
     
