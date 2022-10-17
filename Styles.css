@@ -1,35 +1,54 @@
 :root{
-    --primary-color: grey;
-    --secondary-color: green;
-    --black1-color: black;
+    --primary-color: #000814;
+    --secondary-color: #001d3d;
+    --tertiary-color: #003566;
+    --yellow1-color: #ffc300;
+    --yellow2-color: #ffd60a;
 }
 
 *{
     margin: 0;
     padding: o;
+    box-sizing: border-box;
+}
+
+.side-nav{
+    width:130px;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    float: left;
+    display:block;
+    flex-direction: column;
+}
+
+.main{
+    background: var(--tertiary-colors);
+    margin-top: 10px;
 }
 
 body{
     background-color: var(--secondary-color);
-    font: normal 15px "Helvetica Neue", Ariel, Helvetica, Geneva, sans-serif;
+    font: normal 15px 'Crete Round', serif;
 }
 
 p{
+    color: white;
     line-height: 20px;
     margin-bottom: 20px;
 }
 
-h1{
+h1, h2, h3, h4, h5{
+    color: #fff;
     font-family: 'Crete Round', serif;
     font-weight: bold;
-    color: #444;
     font-size: 45px;
     margin-bottom: 20px;
 }
 
 h2{
     font-weight: 300;
-    color: #444;
     font-size: 55px;
     text-transform: uppercase;
     text-align: center;
@@ -38,8 +57,6 @@ h2{
 
 h3{
     font-size: 30px;
-    color: #444;
-    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px; 
@@ -47,26 +64,31 @@ h3{
 
 h4{
     font-size: 24px;
-    color: #444;
-    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px; 
 }
 
 h5{
     font-size: 15px;
-    color: #444;
-    font-weight: bold;
     text-transform: uppercase; 
 }
 
 a{
     text-decoration: none;
-    color: #444; 
+    color: white; 
 }
 
 a:hover{
-    color: #02b8dd;
+    color: var(--secondary-color);
+}
+
+.features{
+    display: flex-box;
+    flex-direction: row;
+}
+
+.feature-1, .feature-2, .feature-3{
+   flex: auto;
 }
 
 strong{
@@ -75,12 +97,8 @@ strong{
 
 small{
     font-size: 13px;
-    color: #777;
+    color: var(--primary-color);
     font-style: italic;
-}
-
-.clear{
-    clear: both;
 }
 
 .wrapper{
@@ -95,7 +113,8 @@ small{
 }
 
 header{
-    height: 120px;
+    height: 100px;
+    background: #ffc300;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -103,44 +122,39 @@ header{
 
 header h1{
     float: left;
-    margin-top: 32px;
+    margin-top: 35px;
 }
 
 header h1 .color{
-    color: #02b8dd;
+    color: var(--black1-color);
 }
 
 .nav-bar{
+    background: #ffd60a;
+    border-radius: 1%;
+    padding: 1%;
     float: right;
     list-style: none;
-    margin: 20px 5px;
+    margin: 5px 5px;
 }
 
 .nav-bar li{
     display: inline-block;
-    margin-top: 50px;
-  
+    margin-top: 10px;
 }
 
 .nav-bar li a{
     color: #fff;
     text-transform: uppercase;
-    text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
     display: block;
 }
 
 .nav-bar li a:hover{
-    background: rgba(143, 85, 85, 0);
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
 }
 
-#main-img{
-    height: 580px;
-    padding-top: 1px;
-    background: #e8eced url(./Images/fruits.jpeg) no-repeat center;
-}
 
 #main-img h2{
     margin: 180px 0 40px 0;
@@ -149,6 +163,7 @@ header h1 .color{
 .btn-1{
     display: block;
     text-align: center;
+    border: #fff;
     border-radius: 3px;
     color:#fff;
     width: 180px;
@@ -159,23 +174,22 @@ header h1 .color{
 }
 
 .btn-1:hover{
-    background-color: #02b8dd;
+    background-color: var(--tertiary-color);
     color:#fff;
-
 }
 
 .logo img{
     width: 100px;
     float: left;
-    margin: 10px;
+    margin: 15px;
     height: 40px 40px;
-    border-radius: 50%;
+    border-radius: 49%;
 }
 
 .welcome-text{
     position: absolute;
     width: 600px;
-    height: 300px;
+    height: 200px;
     margin: 20% 30%;
     text-align: center;
 }
@@ -188,7 +202,7 @@ header h1 .color{
 }
 
 .welcome-text a{
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 10px 25px;
     text-decoration: none;
     text-transform: uppercase;
